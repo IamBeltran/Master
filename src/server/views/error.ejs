@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<% include partials/_head %>
+
+<body class="bg-light" ng-controller="CtrllLogin">
+	
+
+	<section id="main-wreapper" class="mt-4 ">
+		<div class="container">
+			<h2 id="error-status">Codigo de error: <%= error.status %></h2>
+			<h3><%= message %></h3>
+			<hr class="mb-4">
+			<pre id="error-stack" class="text-white bg-dark p-3"><code class="text-monospace font-weight-light"><%= error.stack %></code>
+			</pre>
+		</div>
+	</section><!--/ section -->
+
+
+<% include partials/_footer_scripts %>	
+<!-- End Document
+================================================== -->
+</body>
+</html>
+
+

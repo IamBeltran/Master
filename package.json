@@ -1,0 +1,79 @@
+{
+  "name": "app",
+  "version": "1.0.0",
+  "description": "Master de proyectos",
+  "author": "Victor Giovanni Beltrán Rodríguez beltran-victor@outlook.com",
+  "contributors": [
+    {
+      "name": "Victor Giovanni Beltrán Rodríguez",
+      "email": "beltran-victor@outlook.com"
+    }
+  ],
+  "license": "MIT",
+  "subdomain": "foobar",
+  "analyze": true,
+  "private": true,
+  "keywords": [
+    "nodejs",
+    "express",
+    "react",
+    "template"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nodejitsu/browsenpm.org"
+  },
+  "bugs": {
+    "url": "https://github.com/nodejitsu/browsenpm.org/issues"
+  },
+  "bin": {
+    "dstart": "node ./src/server/bin/www"
+  },
+  "main": "./src/server/bin/www",
+  "scripts": {
+    "start": "node ./bin/www",
+    "start:production": "set DEBUG=app:*& set NODE_ENV=production& node ./src/server/bin/www",
+    "start:develoment": "set DEBUG=app:*& set NODE_ENV=development& nodemon ./src/server/bin/www",
+    "start:test": "set DEBUG=app:*& set NODE_ENV=test& nodemon ./src/server/bin/www",
+    "test:logger": "set DEBUG=app:*&set NODE_ENV=test& nodemon ./test/test.logger.js",
+    "test": "set NODE_ENV=test& nodemon ./test/test.logger.js"
+  },
+  "dependencies": {
+    "app-root": "^3.0.0",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "cookie-session": "^2.0.0-beta.3",
+    "cors": "^2.8.4",
+    "debug": "^3.1.0",
+    "dotenv": "^6.0.0",
+    "ejs": "^2.6.1",
+    "express": "^4.16.3",
+    "express-session": "^1.15.6",
+    "helmet": "^3.13.0",
+    "http-errors": "^1.7.0",
+    "ip": "^1.1.5",
+    "jwt-simple": "^0.5.1",
+    "method-override": "^3.0.0",
+    "moment": "^2.22.2",
+    "moment-timezone": "^0.5.21",
+    "mongodb-backup": "^1.6.9",
+    "mongodb-restore": "^1.6.2",
+    "mongoose": "^5.2.6",
+    "mongoose-unique-validator": "^2.0.1",
+    "morgan": "^1.9.0",
+    "multer": "^1.3.1",
+    "serve-favicon": "^2.5.0",
+    "ssl-express-www": "^3.0.2",
+    "validator": "^10.4.0",
+    "winston": "^3.0.0",
+    "winston-daily-rotate-file": "^3.3.0",
+    "winston-loggly-bulk": "^2.0.3",
+    "xlsx": "^0.13.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
