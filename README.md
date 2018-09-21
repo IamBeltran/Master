@@ -1,12 +1,33 @@
-# Scaffolding de servidor Express JS
+# Scaffolding de servidor Express
 
-Repositorio con un Scaffolding para desplegar un servidor con **Express JS** para el desarrollo de proyectos, para usarse en los diferentes **STACK** que se usan hoy en día
+Repositorio con un Scaffolding para desplegar un servidor con **Express** para el desarrollo de proyectos, para usarse en los diferentes **STACK** que se usan hoy en día
 
 
 ## Todo:
 
 ### General:
 
-- [ ] 1. Implementar las sugerencias de la documentación oficial de Express
+1. Implementar las sugerencias de la documentación oficial de Express
     - [ ] 1.1 [Mejores prácticas de producción: seguridad](http://expressjs.com/es/advanced/best-practice-security.html)
     - [ ] 1.2 [Mejores prácticas de producción: rendimiento y fiabilidad](http://expressjs.com/es/advanced/best-practice-performance.html)
+
+### Mejores prácticas de producción: seguridad.
+
+- [ ] 1. No utilizar versiones en desuso o vulnerables de Express
+- [ ] 2. Utilizar TLS
+- [ ] 3. Utilizar Helmet
+- [ ] 4. Utilizar cookies de forma segura
+- [ ] 5. Asegurarse de que las dependencias sean seguras
+
+### Mejores prácticas de producción: rendimiento y fiabilidad.
+
+#### **Cosas que hacer en el código**
+
+Estas son algunas de las cosas que puede hacer en el código para mejorar el rendimiento de la aplicación:
+
+- [ ] 1. Utilizar la compresión de gzip
+- [ ] 2. No utilizar funciones síncronas
+- [ ] 3. Utilizar el middleware para el servicio de archivos estáticos
+- [ ] 4. Realizar un registro correcto
+- [ ] 5. Manejar las excepciones correctamente
+
