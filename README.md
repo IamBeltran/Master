@@ -31,3 +31,15 @@ Estas son algunas de las cosas que puede hacer en el código para mejorar el ren
 - [ ] 4. Realizar un registro correcto
 - [ ] 5. Manejar las excepciones correctamente
 
+#### **Cosas que hacer en el entorno / configuración**
+
+Estas son algunas de las cosas que puede hacer en el entorno del sistema para mejorar el rendimiento de la aplicación:
+
+- [ ] 1. Establecer NODE_ENV en “production”
+- [ ] 2. Asegurarse de que la aplicación se reinicia automáticamente
+- [ ] 3. Ejecutar la aplicación en un clúster
+- [ ] 4. Almacenar en la caché los resultados de la solicitud
+- [ ] 5. Utilizar un equilibrador de carga
+- [ ] 6. Utilizar un proxy inverso
+
+
