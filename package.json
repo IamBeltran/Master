@@ -21,13 +21,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/nodejitsu/browsenpm.org"
+    "url": "https://github.com/IamBeltran/Master"
   },
   "bugs": {
-    "url": "https://github.com/nodejitsu/browsenpm.org/issues"
-  },
-  "bin": {
-    "dstart": "node ./src/server/bin/www"
+    "url": "https://github.com/IamBeltran/Master/issues"
   },
   "main": "./src/server/bin/www",
   "scripts": {
