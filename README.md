@@ -1,6 +1,10 @@
 # Scaffolding de servidor Express
 
-Repositorio con un Scaffolding para desplegar un servidor con **Express** para el desarrollo de proyectos, para usarse en los diferentes **STACK** que se usan hoy en día
+Repositorio con un Scaffolding para desplegar un servidor con **Express** para el desarrollo de proyectos en los diferentes **STACK** que se usan hoy en día, ya sean: 
+
+- MERN: MongoDB, **Express**, React, NodeJS
+- MEAN: MongoDB, **Express**, Angular, NodeJS
+- MEVN: MongoDB, **Express**, Vue, NodeJS
 
 
 ## Todo:
