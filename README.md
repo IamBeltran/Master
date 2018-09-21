@@ -15,8 +15,8 @@ Repositorio con un Scaffolding para desplegar un servidor con **Express** para e
 
 - [ ] 1. No utilizar versiones en desuso o vulnerables de Express
 - [ ] 2. Utilizar TLS
-- [ ] 3. Utilizar Helmet
-- [ ] 4. Utilizar cookies de forma segura
+- [x] 3. Utilizar Helmet
+- [x] 4. Utilizar cookies de forma segura
 - [ ] 5. Asegurarse de que las dependencias sean seguras
 
 ### Mejores prácticas de producción: rendimiento y fiabilidad.
