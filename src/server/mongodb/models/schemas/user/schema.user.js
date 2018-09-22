@@ -32,9 +32,6 @@
 //	│	DECLARATION OF CONSTANTS.														│
 //	└───────────────────────────────────────────────────────────────────────────────────┘
 	const Schema = mongoose.Schema;
-	const SALT_WORK_FACTOR = 10;
-	const MAX_LOGIN_ATTEMPTS = 10;
-	const LOCK_TIME = 2 * 60 * 60 * 1000;
 
 //	┌───────────────────────────────────────────────────────────────────────────────────┐
 //	│	SCHEMA FOR USER																	│
@@ -43,42 +40,85 @@
 		name: { 
 			firtsName: {
 				type: String,
-				lowercase:true,
-				required:[true, 'Se necesita un nombre']
+				lowercase: true,
+				trim: true,
+				required: [ true, 'Se necesita un nombre' ]
 			},
 			middleName: {
 				type: String,
-				lowercase:true,
-				required:false
+				lowercase: true,
+				trim: true,
+				required: false
 			},
 			lastName: {
 				type: String,
-				lowercase:true,
-				required:[true, 'Se necesita un apellido']
+				lowercase: true,
+				trim: true,
+				required: [ true, 'Se necesita un apellido' ]
 			},
-			fullName:{
+			fullName: {
 				type: String,
-				lowercase:true,
-				required:false
+				lowercase: true,
+				required: false
 			}
 		},
 		nickName: {
 			type: String,
-			lowercase:true,
-			required: [true,'Se necesita un nombre de usuario'],
+			lowercase: true,
+			required: [ true,'Se necesita un nombre de usuario' ],
 			match:[
 				/^[a-z0-9_-]{3,10}$/,
-				'El ususario solo puede contener 10 caracteres alfanumericos, solo minisculas, tambien incluyendo guion medio y bajo'],
+				'El ususario solo puede contener 10 caracteres alfanumericos, solo minisculas, tambien incluyendo guion medio y bajo'
+			],
 			unique: true
 		},
 		gender: {
 			type: String,
-			lowercase:true,
-			enum: [ 'male' , 'female' ],
-			required: [true, 'Asigna un genero al usuario']
+			lowercase: true,
+			enum: [ 'm' , 'f' ],
+			required: [ true, 'Asigna un genero al usuario' ]
 		},
-		avatar:{
-			img:{
+		birthDate: {
+			type: Date,
+			required: [ true, 'Proporciona fecha de nacimiento' ]
+		},
+		hireDate: {
+			type: Date,
+			required: [ true, 'Proporciona fecha de contratación' ]
+		},
+		adress: {
+			street: {
+				type: String,
+				lowercase: true,
+				required: [ true, 'Se necesita el nombre de la calle' ]
+			},
+			city: {
+				type: String,
+				lowercase: true,
+				required: [ true, 'Se necesita el nombre de la ciudad' ]
+			},
+			zipCode: {
+				type: Number,
+				required:  [true, 'Se necesita el codigo postal' ]
+			},
+			state: {
+				type: String,
+				lowercase: true,
+				required: [ true, 'Se necesita el nombre del estado']
+			},
+			country: {
+				type: String,
+				lowercase: true,
+				required: [ true, 'Se necesita el nombre del pais']
+			}
+		},
+		telephones: [
+			{
+				type:String,
+			}
+		],
+		avatar: {
+			img: {
 				type: String,
 				enum: [ 'default' , 'nickname' ],
 				default: 'default'
@@ -89,7 +129,7 @@
 		},
 		password: {
 			type: String,
-			required:true,
+			required: true,
 			match: [	
 				/^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*[a-zA-Z]).{8,}$/, 
 				'Contraseña debil, 8 caracteres minimo, con contenido alphanumerico incluyendo mayusculas'
@@ -98,7 +138,7 @@
 		},
 		role: {
 			type: String,
-			lowercase:true,
+			lowercase: true,
 			enum: [ 'viewfinder', 'user', 'editor', 'administrator', 'supervisor' ],
 			default: 'user'
 		},
@@ -118,7 +158,7 @@
 		loginAttempts: {
 			type: Number,
 			required: true,
-			default:0
+			default: 0
 		},
 		lockUntil: {
 			type: Date
