@@ -29,10 +29,10 @@ Repositorio con un Scaffolding para desplegar un servidor con **Express** para e
 
 Estas son algunas de las cosas que puede hacer en el código para mejorar el rendimiento de la aplicación:
 
-- [ ] 1. Utilizar la compresión de gzip
+- [x] 1. Utilizar la compresión de gzip
 - [ ] 2. No utilizar funciones síncronas
-- [ ] 3. Utilizar el middleware para el servicio de archivos estáticos
-- [ ] 4. Realizar un registro correcto
+- [x] 3. Utilizar el middleware para el servicio de archivos estáticos
+- [x] 4. Realizar un registro correcto
 - [ ] 5. Manejar las excepciones correctamente
 
 #### **Cosas que hacer en el entorno / configuración**
