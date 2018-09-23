@@ -176,20 +176,20 @@
 		timestamps: true
 	});
 
-//	──[ VIRTUALS. ]────────────────────────────────────────────────────────────────────────
+//	──[ VIRTUALS FOR USER. ]─────────────────────────────────────────────────────────────
 	UserSchema.virtual('isLocked').get(isLocked);
 
-//	──[ PRE-SAVE. ]────────────────────────────────────────────────────────────────────────
+//	──[ PRE-SAVE FOR USER. ]─────────────────────────────────────────────────────────────
 	UserSchema.pre('save', save);
 
-//	──[ METHODS. ]────────────────────────────────────────────────────────────────────────
+//	──[ METHODS FOR USER. ]──────────────────────────────────────────────────────────────
 	UserSchema.methods.comparePassword = comparePassword;
 	UserSchema.methods.incLoginAttempts = incLoginAttempts;
 
-//	──[ STATICS. ]────────────────────────────────────────────────────────────────────────
+//	──[ STATICS FOR USER. ]──────────────────────────────────────────────────────────────
 	UserSchema.statics.failedLogin = failedLogin;
 
 	var reasons = UserSchema.statics.failedLogin
 	UserSchema.statics.getAuthenticated = getAuthenticated;
 
-	module.exports = UserSchema
+	module.exports = UserSchema;
