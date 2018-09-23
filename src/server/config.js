@@ -15,7 +15,8 @@
 	const DEFAULT_PROD_DB_NAME 		= 'PROYECTO';
 	const DEFAULT_PROD_DB_USER 		= "";
 	const DEFAULT_PROD_DB_PASS 		= "";
-
+	const DEFAULT_PROD_SECRET_TOKEN = "MabelPines565";
+	
 //	┌───────────────────────────────────────────────────────────────────────────────────┐
 //	│	MODULE OF CONFIGURATION															│
 //	└───────────────────────────────────────────────────────────────────────────────────┘	
@@ -53,7 +54,7 @@
 				}
 			},
 			//	CONFIGURATION OF THE SECRET KEY API
-			SECRET_TOKEN: "MabelPines565"
+			SECRET_TOKEN: process.env.PROD_SECRET_TOKEN || DEFAULT_PROD_SECRET_TOKEN
 		},
 
 //	──[ DEVELOPMENT. ]───────────────────────────────────────────────────────────────────
