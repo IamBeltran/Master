@@ -6,6 +6,6 @@
 		api: {
 			users: require( './route.api.users' ),
 			tasks: require( './route.api.tasks' ),
-			login: require( './route.api.logs' ),
+			sign: require( './route.api.sign' ),
 		},
 	}

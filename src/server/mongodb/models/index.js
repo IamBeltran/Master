@@ -9,4 +9,9 @@
 //	└───────────────────────────────────────────────────────────────────────────────────┘
 	const UserSchema  = require('./schemas/index');
 	
-	module.exports = User: mongoose.model('user', UserSchema);
+	module.exports = {
+		models: {
+			user: require('./user/model/model.user'),
+			task: require('./user/model/model.task'),
+		}
+	};

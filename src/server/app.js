@@ -117,11 +117,14 @@
 
 //	──[ SET ROUTES API ENDPOINTS.	]────────────────────────────────────────────────────
 
-//	PATH http://host:port/api/users
+	//	PATH http://host:port/api/users
 	app.use('/api/users', routes.api.users);
+	
+	//	PATH http://host:port/api/users
+	app.use('/api/task', routes.api.tasks);
 
 	//	PATH http://host:port/api/users
-	app.use('/api/login', routes.api.login);
+	app.use('/api/sign', routes.api.sign);
 
 //	┌───────────────────────────────────────────────────────────────────────────────────┐
 //	│	ERROR HANDLER.																	│
