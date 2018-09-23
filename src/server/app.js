@@ -39,7 +39,7 @@
 	const { LOGGER_DEBUG } = require('./services/service.logger');
 
 //	──[ MONGODB CONNECTION. ]────────────────────────────────────────────────────────────
-	const MONGODB_CONNECTION = require('./mongodb/connection/mongodb.connection');
+	const MONGODB_CONNECT = require('./mongodb/connection/mongodb.connect');
 
 //	──[ ROUTES. ]────────────────────────────────────────────────────────────────────────
 	const routes = require('./routes');
