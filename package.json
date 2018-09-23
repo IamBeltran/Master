@@ -30,7 +30,7 @@
   "scripts": {
     "start": "node ./bin/www",
     "start:production": "set DEBUG=app:*& set NODE_ENV=production& node ./src/server/bin/www",
-    "start:develoment": "set DEBUG=app:*& set NODE_ENV=development& nodemon ./src/server/bin/www",
+    "start:development": "set DEBUG=app:*& set NODE_ENV=development& nodemon ./src/server/bin/www",
     "start:test": "set DEBUG=app:*& set NODE_ENV=test& nodemon ./src/server/bin/www",
     "test:logger": "set DEBUG=app:*&set NODE_ENV=test& nodemon ./test/test.logger.js",
     "test": "set NODE_ENV=test& nodemon ./test/test.logger.js"

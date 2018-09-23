@@ -10,7 +10,7 @@
 //	└───────────────────────────────────────────────────────────────────────────────────┘ 
 
 //	──[	CONTROLLER TASK ]────────────────────────────────────────────────────────────────
-	const { signInController } = require('../controllers/');
+	const { signController }  = require('../controllers/');
 
 //	┌───────────────────────────────────────────────────────────────────────────────────┐
 //	│	HANDLER OF ROUTES.																│
@@ -18,7 +18,7 @@
 
 
 //	METHOD POST| PATH http://HOST:PORT/api/tasks
-	router.post('/', signInController.signIn);
+	router.post('/', signController.out);
 
 
 //	──[	EXPORT MODULE ]─────────────────────────────────────────────────────────────────
