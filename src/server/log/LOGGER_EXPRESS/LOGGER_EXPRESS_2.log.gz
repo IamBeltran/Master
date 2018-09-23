@@ -1,0 +1,14 @@
+{"message":"401 - No authorization token was found - /API/USER - GET - ::1","level":"error","label":"LOGGER EXPRESS","timestamp":"02:34:28 am 2018-09-23"}
+{"message":"401 - No authorization token was found - /API/img/apple-touch-icon-114x114.png - GET - ::1","level":"error","label":"LOGGER EXPRESS","timestamp":"02:34:28 am 2018-09-23"}
+{"message":"401 - No authorization token was found - /API/img/favicon.ico - GET - ::1","level":"error","label":"LOGGER EXPRESS","timestamp":"02:34:28 am 2018-09-23"}
+{"message":"401 - No authorization token was found - /API/img/favicon.ico - GET - ::1","level":"error","label":"LOGGER EXPRESS","timestamp":"02:34:28 am 2018-09-23"}
+{"message":"404 - Not Found - /API/USER - GET - ::1","level":"error","label":"LOGGER EXPRESS","timestamp":"02:34:52 am 2018-09-23"}
+{"message":"404 - Not Found - /api/signin - GET - ::1","level":"error","label":"LOGGER EXPRESS","timestamp":"02:51:26 am 2018-09-23"}
+{"message":"404 - Not Found - /api/img/apple-touch-icon-114x114.png - GET - ::1","level":"error","label":"LOGGER EXPRESS","timestamp":"02:51:27 am 2018-09-23"}
+{"message":"404 - Not Found - /api/img/favicon.ico - GET - ::1","level":"error","label":"LOGGER EXPRESS","timestamp":"02:51:27 am 2018-09-23"}
+{"message":"404 - Not Found - //api/signin - GET - ::1","level":"error","label":"LOGGER EXPRESS","timestamp":"02:51:47 am 2018-09-23"}
+{"message":"404 - Not Found - //api/img/favicon.ico - GET - ::1","level":"error","label":"LOGGER EXPRESS","timestamp":"02:51:47 am 2018-09-23"}
+{"message":"404 - Not Found - //api/img/apple-touch-icon-114x114.png - GET - ::1","level":"error","label":"LOGGER EXPRESS","timestamp":"02:51:47 am 2018-09-23"}
+{"message":"404 - Not Found - //api/img/favicon.ico - GET - ::1","level":"error","label":"LOGGER EXPRESS","timestamp":"02:51:47 am 2018-09-23"}
+{"message":"404 - Not Found - /api/signin - GET - ::1","level":"error","label":"LOGGER EXPRESS","timestamp":"02:51:52 am 2018-09-23"}
+{"message":"404 - Not Found - /api/signin - GET - ::1","level":"error","label":"LOGGER EXPRESS","timestamp":"02:52:34 am 2018-09-23"}

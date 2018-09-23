@@ -14,6 +14,7 @@
 	const createError		= require('http-errors');
 	const helmet			= require('helmet');
 	const secure 			= require('ssl-express-www');
+	const expressJwt 		= require('express-jwt');
 
 //	┌───────────────────────────────────────────────────────────────────────────────────┐
 //	│	DECLARATION OF CONSTANTS.														│
@@ -82,7 +83,7 @@
 	app.use(compression());	
 	app.use(bodyParser.json());
 	app.use(bodyParser.urlencoded({extended:false}));
-	app.use(expressJwt({ secret:SECRET_TOKEN }).unless({ path: ["/login"] }));
+	//app.use(expressJwt({ secret:SECRET_TOKEN }).unless({ path: ["/login"] }));
 
 //	──[ MIDDLEWARES STATIC.	]───────────────────────────────────────────────────────────	
 	app.use(favicon(FAVICON_PATH));
@@ -120,6 +121,12 @@
 
 	//	PATH http://host:port/api/users
 	app.use('/api/users', routes.api.users);
+
+	//	PATH http://host:port/api/users
+	app.use('/api/signin', routes.sign.in);
+	
+	//	PATH http://host:port/api/users
+	app.use('/api/signout', routes.sign.out);
 
 //	┌───────────────────────────────────────────────────────────────────────────────────┐
 //	│	ERROR HANDLER.																	│

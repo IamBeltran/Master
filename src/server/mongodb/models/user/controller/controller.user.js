@@ -134,6 +134,5 @@
 					message: `ERROR ON DELETE THE USER: ${err}`
 				});
 			});
-		}
-
+		},
 	};
