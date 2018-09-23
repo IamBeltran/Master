@@ -7,6 +7,6 @@
 //	┌───────────────────────────────────────────────────────────────────────────────────┐
 //	│	USER SCHEMA.																	│
 //	└───────────────────────────────────────────────────────────────────────────────────┘
-	const UserSchema  = require('./schemas/index');
+	const UserSchema  = require('./schema/schema.user');
 	
 	module.exports = User: mongoose.model('user', UserSchema);

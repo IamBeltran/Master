@@ -38,8 +38,10 @@ jspm_packages/
 
 # Notes of proyect
 Documentos/
+
 # Test of proyect
-test
+Test/
+
 # Typescript v1 declaration files
 typings/
 

@@ -120,6 +120,9 @@
 //	PATH http://host:port/api/users
 	app.use('/api/users', routes.api.users);
 
+	//	PATH http://host:port/api/users
+	app.use('/api/login', routes.api.login);
+
 //	┌───────────────────────────────────────────────────────────────────────────────────┐
 //	│	ERROR HANDLER.																	│
 //	└───────────────────────────────────────────────────────────────────────────────────┘

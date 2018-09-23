@@ -21,7 +21,8 @@
 	
 //	mongodb://username:password@host1:port1/database?options
 	const URL_STRING = `${SERVER}${HOST}:${PORT}/${NAME}`;
-	const DATABASE_URL 	= process.env.MONGODB_URI||URL_STRING;
+	const DATABASE_URL 	= URL_STRING;
+
 //	┌───────────────────────────────────────────────────────────────────────────────────┐
 //	│	CREATE THE DATABASE CONNECTION.													│
 //	└───────────────────────────────────────────────────────────────────────────────────┘

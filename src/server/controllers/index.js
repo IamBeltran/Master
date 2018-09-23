@@ -3,6 +3,6 @@
 //	│	INDEX CONTROLLER.																│
 //	└───────────────────────────────────────────────────────────────────────────────────┘
 	module.exports = {
-		user: require( './controller.user' ),
-		task: require( './controller.task' ),
+		userController: require( './controller.user' ),
+		taskController: require( './controller.task' ),
 	}

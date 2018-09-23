@@ -2,33 +2,30 @@
 //	┌───────────────────────────────────────────────────────────────────────────────────┐
 //	│	REQUIRE NODE-MODULE DEPENDENCIES.												│
 //	└───────────────────────────────────────────────────────────────────────────────────┘
-	const express	= require('express');
-	const router	= express.Router();
+	const mongoose			= require('mongoose');
+	const uniqueValidator 	= require('mongoose-unique-validator');
+	const bcrypt			= require('bcryptjs');
 
 //	┌───────────────────────────────────────────────────────────────────────────────────┐
-//	│	REQUIRE MY-MODULE DEPENDENCIES.													│
-//	└───────────────────────────────────────────────────────────────────────────────────┘ 
-
-//	──[	CONTROLLER TASK ]────────────────────────────────────────────────────────────────
-	const { taskController } = require('../controllers/');
-
-//	┌───────────────────────────────────────────────────────────────────────────────────┐
-//	│	HANDLER OF ROUTES.																│
+//	│	REQUIRE MY-MODULES DEPENDENCIES.												│
 //	└───────────────────────────────────────────────────────────────────────────────────┘
+	
 
-//	METHOD GET| PATH http://HOST:PORT/api/tasks
-	router.get('/', taskController.getTasks);
+//	┌───────────────────────────────────────────────────────────────────────────────────┐
+//	│	DECLARATION OF CONSTANTS.														│
+//	└───────────────────────────────────────────────────────────────────────────────────┘
+	const Schema = mongoose.Schema;
+	const SALT_WORK_FACTOR = 10;
+	const MAX_LOGIN_ATTEMPTS = 10;
+	const LOCK_TIME = 2 * 60 * 60 * 1000;
 
-//	METHOD GET| PATH http://HOST:PORT/api/tasks/:id
-	router.get('/:id',taskController.getTask);
+//	┌───────────────────────────────────────────────────────────────────────────────────┐
+//	│	MODULE EXPORTS.																	│
+//	└───────────────────────────────────────────────────────────────────────────────────┘
+	module.exports = {
+		isLocked:	function (){
+			//	CHECK FOR A FUTURE LOCKUNTIL TIMESTAMP
+			return !!(this.lockUntil && this.lockUntil > Date.now());
+		},
 
-//	METHOD POST| PATH http://HOST:PORT/api/tasks
-	router.post('/', taskController.addTask);
-
-//	METHOD PUT| PATH http://HOST:PORT/api/tasks/:id
-	router.put('/:id', taskController.updateTask);
-
-//	METHOD DELETE| PATH http://HOST:PORT/api/tasks/:id
-	router.delete('/:id', taskController.deleteTask);
-
-	module.exports = router;
+	};
