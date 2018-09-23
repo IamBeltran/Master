@@ -1,7 +1,7 @@
 {
-  "name": "app",
+  "name": "express-server",
   "version": "1.0.0",
-  "description": "Master de proyectos",
+  "description": "Scaffolding para comenzar servidor de ExpressJS",
   "author": "Victor Giovanni Beltrán Rodríguez beltran-victor@outlook.com",
   "contributors": [
     {
@@ -12,11 +12,12 @@
   "license": "MIT",
   "subdomain": "foobar",
   "analyze": true,
-  "private": true,
+  "private": false,
   "keywords": [
-    "nodejs",
-    "express",
-    "template"
+    "NodeJS",
+    "Express JS",
+    "Template",
+    "Scaffolding"
   ],
   "repository": {
     "type": "git",
