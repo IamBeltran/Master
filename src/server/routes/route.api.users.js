@@ -31,4 +31,5 @@
 //	METHOD DELETE| PATH http://HOST:PORT/api/users/:id
 	router.delete('/:id', userController.deleteUser);
 
+//	──[	EXPORT MODULE ]─────────────────────────────────────────────────────────────────
 	module.exports = router;

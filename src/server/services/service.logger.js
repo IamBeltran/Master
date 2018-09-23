@@ -313,6 +313,7 @@
 		silent: false
 	});
 
+//	──[	EXPORT MODULE ]─────────────────────────────────────────────────────────────────
 	module.exports = {		
 		LOGGER_MONGODB,
 		LOGGER_EXPRESS,

@@ -39,7 +39,7 @@
 	const { LOGGER_DEBUG } = require('./services/service.logger');
 
 //	──[ MONGODB CONNECTION. ]────────────────────────────────────────────────────────────
-	const MONGODB_CONNECTION = require('./mongodb/mongodb.connection');
+	const MONGODB_CONNECTION = require('./mongodb/connection/mongodb.connection');
 
 //	──[ ROUTES. ]────────────────────────────────────────────────────────────────────────
 	const routes = require('./routes');
@@ -150,4 +150,5 @@
 		res.render('error');
 	});
 
+//	──[	EXPORT MODULE ]─────────────────────────────────────────────────────────────────
 	module.exports = app;

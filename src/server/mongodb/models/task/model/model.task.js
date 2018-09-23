@@ -5,8 +5,9 @@
 	const mongoose	= require('mongoose');
 	
 //	┌───────────────────────────────────────────────────────────────────────────────────┐
-//	│	USER SCHEMA.																	│
+//	│	TASK SCHEMA.																	│
 //	└───────────────────────────────────────────────────────────────────────────────────┘
 	const TaskSchema  = require('../schema/schema.task');
-	
+
+//	──[	EXPORT MODULE ]─────────────────────────────────────────────────────────────────	
 	module.exports = mongoose.model('task', TaskSchema);

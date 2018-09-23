@@ -119,5 +119,6 @@
 			SECRET_TOKEN: "MabelPines565"
 		}
 	};
-	
+
+//	──[	EXPORT MODULE ]─────────────────────────────────────────────────────────────────	
 	module.exports = config[env];

@@ -13,11 +13,11 @@
 //	└───────────────────────────────────────────────────────────────────────────────────┘
 
 //	──[ LOGGERS. ]────────────────────────────────────────────────────────────────────────
-	const { LOGGER_MONGODB } = require('../services/service.logger');
-	const { LOGGER_DEBUG } = require('../services/service.logger');
+	const { LOGGER_MONGODB } = require('../../services/service.logger');
+	const { LOGGER_DEBUG } = require('../../services/service.logger');
 
 //	──[ BUILD THE CONNECTION STRING.	]───────────────────────────────────────────────
-	const { MONGODB: { SERVER, HOST, PORT, NAME, OPTIONS } } = require('../config');
+	const { MONGODB: { SERVER, HOST, PORT, NAME, OPTIONS } } = require('../../config');
 	
 //	mongodb://username:password@host1:port1/database?options
 	const URL_STRING = `${SERVER}${HOST}:${PORT}/${NAME}`;
@@ -94,5 +94,6 @@
 			process.exit(0); 
 		});
 	});
-	
+
+//	──[	EXPORT MODULE ]─────────────────────────────────────────────────────────────────	
 	module.exports = MONGODB_CONNECT;
