@@ -16,6 +16,4 @@
 				resolve(decodedToken)
 			})
 		})
-	}
-
-// https://github.com/IamBeltran/Server-ExpresJS.git
+	};
