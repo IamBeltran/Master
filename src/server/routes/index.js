@@ -5,7 +5,7 @@
 	module.exports = {
 		api: {
 			users: require( './route.api.users' ),
-			tasks: require( './route.api.tasks' ),
-			sign: require( './route.api.sign' ),
+			//tasks: require( './route.api.tasks' ),
+			//sign: require( './route.api.sign' ),
 		},
 	}
