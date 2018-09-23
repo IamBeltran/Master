@@ -82,6 +82,7 @@
 	app.use(compression());	
 	app.use(bodyParser.json());
 	app.use(bodyParser.urlencoded({extended:false}));
+	app.use(expressJwt({ secret:SECRET_TOKEN }).unless({ path: ["/login"] }));
 
 //	──[ MIDDLEWARES STATIC.	]───────────────────────────────────────────────────────────	
 	app.use(favicon(FAVICON_PATH));

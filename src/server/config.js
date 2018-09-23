@@ -86,7 +86,7 @@
 				}
 			},
 			//	CONFIGURATION OF THE SECRET KEY API
-			SECRET_TOKEN: "MabelPines565"
+			SECRET_TOKEN: process.env.DEV_SECRET_TOKEN || "MabelPines565"
 			},
 //	──[ TEST. ]──────────────────────────────────────────────────────────────────────────
 		test:{
@@ -117,7 +117,7 @@
 				}
 			},
 			//	CONFIGURATION OF THE SECRET KEY API
-			SECRET_TOKEN: "MabelPines565"
+			SECRET_TOKEN: process.env.TEST_SECRET_TOKEN || "MabelPines565"
 		}
 	};
 
