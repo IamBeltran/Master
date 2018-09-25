@@ -24,7 +24,7 @@
 //	└───────────────────────────────────────────────────────────────────────────────────┘
 	module.exports = {
 		pre:{
-			save:	function(next){
+			save: function(next){
 				var user = this;
 
 				// If password Modified
@@ -71,6 +71,7 @@
 				}else{
 					user.avatar.path = user.nickName.toLowerCase();
 				}
+
 			}
 
 		}

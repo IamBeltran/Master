@@ -79,49 +79,6 @@
 			enum: [ 'm' , 'f' ],
 			required: [ true, 'Asigna un genero al usuario' ]
 		},
-		birthDate: {
-			type: Date,
-			required: [ true, 'Proporciona fecha de nacimiento' ]
-		},
-		hireDate: {
-			type: Date,
-			required: [ true, 'Proporciona fecha de contratación' ]
-		},
-		adress: {
-			street: {
-				type: String,
-				lowercase: true,
-				trim: true,
-				required: [ true, 'Se necesita el nombre de la calle' ]
-			},
-			city: {
-				type: String,
-				lowercase: true,
-				trim: true,
-				required: [ true, 'Se necesita el nombre de la ciudad' ]
-			},
-			zipCode: {
-				type: Number,
-				required:  [true, 'Se necesita el codigo postal' ]
-			},
-			state: {
-				type: String,
-				lowercase: true,
-				trim: true,
-				required: [ true, 'Se necesita el nombre del estado']
-			},
-			country: {
-				type: String,
-				lowercase: true,
-				trim: true,
-				required: [ true, 'Se necesita el nombre del pais']
-			}
-		},
-		telephones: [
-			{
-				type:String,
-			}
-		],
 		avatar: {
 			img: {
 				type: String,
@@ -175,6 +132,8 @@
 		versionKey: false,
 		timestamps: true
 	});
+
+	UserSchema.index({ fullName: 1 }, { sparse: true });
 
 //	──[ VIRTUALS FOR USER. ]─────────────────────────────────────────────────────────────
 	UserSchema.virtual('isLocked').get(isLocked);
