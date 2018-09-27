@@ -67,4 +67,4 @@ typings/
 .next
 
 # .gz File log for winston
-.gz
+.log.gz

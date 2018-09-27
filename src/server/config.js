@@ -23,7 +23,7 @@
 	//	'production', 'development' or 'test'
 	const env = process.env.NODE_ENV;	
 	
-	const config = {
+	const CONFIG = {
 
 //	──[ PRODUCTION. ]────────────────────────────────────────────────────────────────────
 		production:{
@@ -122,4 +122,4 @@
 	};
 
 //	──[	EXPORT MODULE ]─────────────────────────────────────────────────────────────────	
-	module.exports = config[env];
+	module.exports = CONFIG[env];
