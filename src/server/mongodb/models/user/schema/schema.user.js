@@ -76,7 +76,7 @@
 		gender: {
 			type: String,
 			lowercase: true,
-			enum: [ 'm' , 'f' ],
+			enum: [ 'male' , 'female' ],
 			required: [ true, 'Asigna un genero al usuario' ]
 		},
 		avatar: {
@@ -102,6 +102,7 @@
 		role: {
 			type: String,
 			lowercase: true,
+			//		Lector Usuario Editor Administrador Supervisor
 			enum: [ 'viewfinder', 'user', 'editor', 'administrator', 'supervisor' ],
 			default: 'user'
 		},

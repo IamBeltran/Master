@@ -12,6 +12,5 @@
 	module.exports = {
 		models: {
 			user: require('./user/model/model.user'),
-			task: require('./user/model/model.task'),
 		}
 	};

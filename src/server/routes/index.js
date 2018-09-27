@@ -7,7 +7,7 @@
 			users: require( './route.api.users' ),
 		},
 		sign:{
-			in: require( './route.signin' ),
-			out: require( './route.signout' ),
+			in: require( './route.sign.in' ),
+			out: require( './route.sign.out' ),
 		},
 	}
