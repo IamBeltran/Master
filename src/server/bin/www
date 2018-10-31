@@ -33,7 +33,7 @@
 //	└───────────────────────────────────────────────────────────────────────────────────┘
 	server.listen(port , () => {
 		console.log(`────────────────────────────────────────────────────`);
-		console.log(`→ START THE SERVER ON PORT: ${port}`); 
+		console.log(`→ START THE SERVER ON PORT: '${port}'`); 
 		console.log(`→ START APP IN ENVIRONMENT: ${ENVIRONMENT.toUpperCase()}`);
 		console.log(`→ OPEN http://${HOSTNAME}:${port} IN YOUR BROWSER`);
 		console.log(`→ VIEWS DIRECTORY: ${app.get('views')}` ); 

@@ -1,0 +1,2 @@
+{"name":"MongoNetworkError","errorLabels":["TransientTransactionError"],"level":"error","label":"LOGGER MONGODB","timestamp":"12:45:50 am 2018-10-12"}
+{"name":"MongoNetworkError","errorLabels":["TransientTransactionError"],"level":"error","label":"LOGGER MONGODB","timestamp":"11:22:53 pm 2018-10-29"}

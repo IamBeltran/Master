@@ -3,8 +3,8 @@
 //	│	REQUIRE NODE-MODULE DEPENDENCIES.												│
 //	└───────────────────────────────────────────────────────────────────────────────────┘
 	const mongoose = 	require( 'mongoose' )
-						.set('useCreateIndex', true)
-						.set('debug', true)
+						//.set('useCreateIndex', true)
+						//.set('debug', true)
 	//	mongoose.set('bufferCommands', 'enable');
 	//	mongoose.set({'useCreateIndex':true,'debug':true});
 	
